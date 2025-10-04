@@ -1,1 +1,79 @@
-SIS257 2/2025
+# SIS257 | Proyecto Final de Laboratorio: Sistema de Gestión para [Nombre del Bar-Restaurant]
+
+## 1. Información General del Proyecto
+
+| Detalle | Valor |
+| :--- | :--- |
+| **Nombre del Repositorio** | `sis257_barraza` |
+| **Tema/Negocio** | Bar-Restaurant |
+| **Base de Datos** | PostgreSQL (Nombre: `sis257_barraza`) |
+| **Backend** | NestJS (Directorio: `backend_barraza`) |
+| **Frontend** | Vue.js + Bootstrap (Directorio: `frontend_barraza`) |
+| **Funcionalidad Principal**| Gestión de **Ventas/Pedidos** (con control de Mesas e Inventario) |
+| **Versión Inicial** | 0.1.0 - [Fecha del commit inicial, ej: 04/10/2025] |
+
+---
+
+## 2. Descripción del Negocio y Problema a Resolver
+
+### Nombre del Negocio
+**[Nombre de tu Bar-Restaurant, ej: "Barraza"]**
+
+### Descripción
+Sistema de gestión integral diseñado para optimizar las operaciones de un Bar-Restaurant. El objetivo principal es digitalizar el proceso de **toma de pedidos (Ventas)** y el control de **inventario**, asegurando que las entradas (Compras a proveedores) y salidas (Ventas a clientes) se reflejen en tiempo real en el stock.
+
+### Problemática (Justificación)
+Actualmente, el control de mesas, la toma de pedidos y la gestión de inventario se realizan de forma manual (libretas, pizarras o hojas de cálculo). Esto provoca:
+1.  Errores en las cuentas y cierres de caja.
+2.  Desconocimiento del stock real, generando quiebres o excesos de inventario.
+3.  Lenta rotación de mesas debido a la ineficiencia en el registro de pedidos.
+
+Nuestro sistema resuelve estos problemas centralizando la información y automatizando las transacciones de **Compra** y **Venta**.
+
+---
+
+## 3. Estructura de la Base de Datos (Entidades Tentativas)
+
+El modelo de base de datos (`sis257_barraza`) está diseñado para ser transaccional (Ventas/Compras) y cuenta con **3 Catálogos** para cumplir con el requisito de CRUD.
+
+### A. Catálogos Principales (CRUD Requerido)
+
+| Entidad (Tabla) | Campos Tentativos | Rol en el Sistema |
+| :--- | :--- | :--- |
+| **Productos** | `id`, `nombre`, `descripcion`, `precio_venta`, **`stock`** (INTEGER), `id_categoria` (FK) | Control de Inventario y Precios. |
+| **Categorías** | `id`, `nombre` | Clasificación de Platos/Bebidas. |
+| **Proveedores** | `id`, `nombre`, `nit`, `telefono` | Gestión de Entradas (Módulo de Compras). |
+
+### B. Entidades de Soporte y Transaccionales
+
+| Entidad (Tabla) | Campos Tentativos | Flujo Asociado |
+| :--- | :--- | :--- |
+| **Usuarios** | `id`, `username`, `password` (encriptada), `rol` | Autenticación (Login/JWT). |
+| **Mesas** | `id`, `numero_mesa`, `capacidad`, **`estado`** (VARCHAR) | Soporte para el flujo de Ventas/Pedidos. |
+| **Ventas** | `id`, `fecha`, `total`, `id_mesa` (FK), `id_usuario` (FK), `estado` | Encabezado de la Venta (Salida de Inventario). |
+| **DetalleVentas** | `id`, `id_venta` (FK), `id_producto` (FK), `cantidad`, `precio_unitario` | Desglose de productos vendidos (Resta de Stock). |
+| **Compras** | `id`, `fecha_compra`, `total`, `id_proveedor` (FK), `id_usuario` (FK) | Encabezado de la Compra (Entrada a Inventario). |
+| **DetalleCompras** | `id`, `id_compra` (FK), `id_producto` (FK), `cantidad`, `precio_unitario_compra` | Desglose de productos comprados (Suma al Stock). |
+
+---
+
+## 4. Cronograma de Trabajo
+
+Sección para ser actualizada con el progreso de los commits de los miembros del equipo.
+
+| Tarea | Fecha Límite | Estado | Responsable(s) |
+| :--- | :--- | :--- | :--- |
+| Conformación de grupos y creación de repositorio. | 02/10/2025 | **COMPLETADO** | [Nombre 1], [Nombre 2], [Nombre 3] |
+| Creación de `README.md` (Entidades Tentativas). | 05/10/2025 | EN PROCESO | [Tu Nombre] |
+| Creación de proyecto Backend (NestJS). | 09/10/2025 | PENDIENTE | [Nombre del Backend Lead] |
+| ... | ... | ... | ... |
+
+---
+
+## 5. Integrantes del Grupo
+
+| Nombre Completo | Rol Principal (Tentativo) | Contacto (Opcional) |
+| :--- | :--- | :--- |
+| [Nombre y Apellido 1] | [Ej: Backend Lead] | [Ej: user@mail.com] |
+| [Nombre y Apellido 2] | [Ej: Frontend Lead] | [Ej: user2@mail.com] |
+| [Nombre y Apellido 3] | [Ej: Documentación/DB] | [Ej: user3@mail.com] |
