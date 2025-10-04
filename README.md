@@ -4,11 +4,11 @@
 
 | Detalle | Valor |
 | :--- | :--- |
-| **Nombre del Repositorio** | `sis257_barraza` |
+| **Nombre del Repositorio** | `sis257_bar_restaurant` |
 | **Tema/Negocio** | Bar-Restaurant |
-| **Base de Datos** | PostgreSQL (Nombre: `sis257_barraza`) |
-| **Backend** | NestJS (Directorio: `backend_barraza`) |
-| **Frontend** | Vue.js + Bootstrap (Directorio: `frontend_barraza`) |
+| **Base de Datos** | PostgreSQL (Nombre: `sis257_bar_restaurant`) |
+| **Backend** | NestJS (Directorio: `backend_bar_restaurant`) |
+| **Frontend** | Vue.js + Bootstrap (Directorio: `frontend_bar_restaurant`) |
 | **Funcionalidad Principal**| Gestión de **Ventas/Pedidos** (con control de Mesas e Inventario) |
 | **Versión Inicial** | 0.1.0 - [Fecha del commit inicial, ej: 04/10/2025] |
 
@@ -64,7 +64,7 @@ Sección para ser actualizada con el progreso de los commits de los miembros del
 | Tarea | Fecha Límite | Estado | Responsable(s) |
 | :--- | :--- | :--- | :--- |
 | Conformación de grupos y creación de repositorio. | 02/10/2025 | **COMPLETADO** | [Nombre 1], [Nombre 2], [Nombre 3] |
-| Creación de `README.md` (Entidades Tentativas). | 05/10/2025 | EN PROCESO | [Tu Nombre] |
+| Creación de `README.md` (Entidades Tentativas). | 05/10/2025 | EN PROCESO | mac |
 | Creación de proyecto Backend (NestJS). | 09/10/2025 | PENDIENTE | [Nombre del Backend Lead] |
 | ... | ... | ... | ... |
 
