@@ -1,4 +1,4 @@
-# SIS257 | Proyecto Final de Laboratorio: Sistema de Gestión para [Nombre del Bar-Restaurant]
+# SIS257 | Proyecto Final de Laboratorio: Sistema de Gestión para un Bar-Restaurant
 
 <p align="center">
     <img src="./assets/logo_bar_restaurant.jpg" alt="Logo de la empresa" width="300" style="border-radius: 15px;"/>
