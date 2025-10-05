@@ -1,5 +1,9 @@
 # SIS257 | Proyecto Final de Laboratorio: Sistema de Gestión para [Nombre del Bar-Restaurant]
 
+<p align="center">
+    <img src="./assets/logo_bar_restaurant.jpg" alt="Logo Barraza" width="300"/>
+</p>
+
 ## 1. Información General del Proyecto
 
 | Detalle | Valor |
@@ -10,7 +14,7 @@
 | **Backend** | NestJS (Directorio: `backend_bar_restaurant`) |
 | **Frontend** | Vue.js + Bootstrap (Directorio: `frontend_bar_restaurant`) |
 | **Funcionalidad Principal**| Gestión de **Ventas/Pedidos** (con control de Mesas e Inventario) |
-| **Versión Inicial** | 0.1.0 - [Fecha del commit inicial, ej: 04/10/2025] |
+| **Versión Inicial** | 0.1.0 -  04/10/2025 |
 
 ---
 
