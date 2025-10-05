@@ -1,7 +1,7 @@
 # SIS257 | Proyecto Final de Laboratorio: Sistema de Gestión para [Nombre del Bar-Restaurant]
 
 <p align="center">
-    <img src="./assets/logo_bar_restaurant.jpg" alt="Logo Barraza" width="300"/>
+    <img src="./assets/logo_bar_restaurant.jpg" alt="Logo de la empresa" width="300" style="border-radius: 15px;"/>
 </p>
 
 ## 1. Información General del Proyecto
