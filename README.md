@@ -17,7 +17,7 @@
 ## 2. Descripción del Negocio y Problema a Resolver
 
 ### Nombre del Negocio
-**[Nombre de tu Bar-Restaurant, ej: "Barraza"]**
+**[Nombre de tu Bar-Restaurant]**
 
 ### Descripción
 Sistema de gestión integral diseñado para optimizar las operaciones de un Bar-Restaurant. El objetivo principal es digitalizar el proceso de **toma de pedidos (Ventas)** y el control de **inventario**, asegurando que las entradas (Compras a proveedores) y salidas (Ventas a clientes) se reflejen en tiempo real en el stock.
@@ -34,7 +34,7 @@ Nuestro sistema resuelve estos problemas centralizando la información y automat
 
 ## 3. Estructura de la Base de Datos (Entidades Tentativas)
 
-El modelo de base de datos (`sis257_barraza`) está diseñado para ser transaccional (Ventas/Compras) y cuenta con **3 Catálogos** para cumplir con el requisito de CRUD.
+El modelo de base de datos (`sis257_bar_restaurant`) está diseñado para ser transaccional (Ventas/Compras) y cuenta con **3 Catálogos** para cumplir con el requisito de CRUD.
 
 ### A. Catálogos Principales (CRUD Requerido)
 
@@ -63,17 +63,17 @@ Sección para ser actualizada con el progreso de los commits de los miembros del
 
 | Tarea | Fecha Límite | Estado | Responsable(s) |
 | :--- | :--- | :--- | :--- |
-| Conformación de grupos y creación de repositorio. | 02/10/2025 | **COMPLETADO** | [Nombre 1], [Nombre 2], [Nombre 3] |
-| Creación de `README.md` (Entidades Tentativas). | 05/10/2025 | EN PROCESO | mac |
-| Creación de proyecto Backend (NestJS). | 09/10/2025 | PENDIENTE | [Nombre del Backend Lead] |
+| Conformación de grupos y creación de repositorio. | 02/10/2025 | **COMPLETADO** | Magin, Alexander, Joel |
+| Creación de `README.md` (Entidades Tentativas). | 05/10/2025 | EN PROCESO | macDev |
+| Creación de proyecto Backend (NestJS). | 09/10/2025 | PENDIENTE | ... |
 | ... | ... | ... | ... |
 
 ---
 
 ## 5. Integrantes del Grupo
 
-| Nombre Completo | Rol Principal (Tentativo) | Contacto (Opcional) |
+| Nombre Completo | Nombre de Usuario Git | Contactos |
 | :--- | :--- | :--- |
-| [Nombre y Apellido 1] | [Ej: Backend Lead] | [Ej: user@mail.com] |
-| [Nombre y Apellido 2] | [Ej: Frontend Lead] | [Ej: user2@mail.com] |
-| [Nombre y Apellido 3] | [Ej: Documentación/DB] | [Ej: user3@mail.com] |
+| Magin Condori Huanca | macDev | ... |
+| Alexander Antonio Lizondo Fortun | ... | ... |
+| Joel Jhonatan Copa Aiza | ... | ... |
